@@ -1,5 +1,12 @@
 module.exports = {
-  extends: ['alloy', 'alloy/react', 'alloy/typescript', 'next'],
+  extends: [
+    'alloy',
+    'alloy/react',
+    'alloy/typescript',
+    'next',
+    'plugin:react/recommended',
+    'prettier',
+  ],
   // use next/core-web-vitals to error on a number of rules
   // that are warnings by default if they affect Core Web Vitals
   // extends: ['next', 'next/core-web-vitals'],
@@ -12,5 +19,10 @@ module.exports = {
   },
   rules: {
     'import/no-anonymous-default-export': 'off',
+  },
+  settings: {
+    react: {
+      version: 'latest',
+    },
   },
 }
