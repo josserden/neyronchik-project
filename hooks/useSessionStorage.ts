@@ -4,10 +4,12 @@ import { isBrowser } from '@/utils'
 const STORAGE_KEY = 'show-banner'
 const defaultValue = true
 
-export const useSessionStorage = (): {
+interface IStorage {
   isHidden: boolean
   handleClick: () => void
-} => {
+}
+
+export const useSessionStorage = (): IStorage => {
   const [isHidden, setHidden] = useState<boolean>(defaultValue)
 
   isBrowser &&
