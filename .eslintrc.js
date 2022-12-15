@@ -5,11 +5,7 @@ module.exports = {
     'alloy/typescript',
     'next',
     'plugin:react/recommended',
-    'prettier',
   ],
-  // use next/core-web-vitals to error on a number of rules
-  // that are warnings by default if they affect Core Web Vitals
-  // extends: ['next', 'next/core-web-vitals'],
   env: {
     node: true,
     browser: true,
@@ -19,10 +15,9 @@ module.exports = {
   },
   rules: {
     'import/no-anonymous-default-export': 'off',
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
+    'react/react-in-jsx-scope': 'off',
+    eqeqeq: 'off',
   },
-  settings: {
-    react: {
-      version: 'latest',
-    },
-  },
-}
+};

@@ -1,14 +1,19 @@
+import { Heading } from '@/components'
 import Head from 'next/head'
 
-export default function Home() {
+const Home = () => {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>НЕЙРОНЧИКИ</title>
+        <link rel="icon" href="/favicon.svg" type="svg" />
       </Head>
 
-      <h1 className="text-3xl font-semibold">Hello</h1>
+      <Heading tag="h1">Hello</Heading>
+      <Heading tag="h2">About Us</Heading>
+      <Heading tag="h3">Про нас</Heading>
     </div>
   )
 }
+
+export default Home

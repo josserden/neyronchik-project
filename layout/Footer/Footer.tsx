@@ -1,13 +1,13 @@
-import classNames from 'classnames'
 import { FC } from 'react'
 import { FooterProps } from './Footer.props'
+import s from './Footer.module.css'
 
 export const Footer: FC<FooterProps> = ({ className, ...props }) => {
   return (
-    <footer className={classNames('border-t-2 border-slate-200 py-6', className)} {...props}>
-      <div className="container flex items-center justify-center">
-        <p className=" text-base font-light leading-6 text-gray-700">
-          © {new Date().getFullYear()}
+    <footer className={s.footer} {...props}>
+      <div className={s.footerWrapper}>
+        <p className={s.footerText}>
+          &#169; {new Date().getFullYear()} Нейрончики - логопедичний центр. Усі права захищені
         </p>
       </div>
     </footer>

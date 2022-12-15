@@ -1,24 +1,18 @@
 import { FC } from 'react'
-import { useSessionStorage } from '@/hooks'
+
 import { Banner, Footer, Header } from '..'
 import { LayoutProps } from './Layout.props'
+import classNames from 'classnames'
 
-export const Layout: FC<LayoutProps> = ({ children }) => {
-  const { isHidden, handleClick } = useSessionStorage()
-
+export const Layout: FC<LayoutProps> = ({ children, className, ...props }) => {
   return (
-    <div className="flex h-full min-h-screen flex-col bg-slate-50">
-      {isHidden && (
-        <Banner>
-          <strong>Text</strong>
-          <button type="button" onClick={handleClick}>
-            close
-          </button>
-        </Banner>
-      )}
-
+    <div
+      className={classNames('flex h-full min-h-screen flex-col bg-amber-50', className)}
+      {...props}
+    >
+      <Banner>АКЦІЯ МІСЯЦЯ!!! Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Banner>
       <Header />
-      <main className="flex-grow bg-gray-100">{children}</main>
+      <main className="flex-grow">{children}</main>
       <Footer />
     </div>
   )

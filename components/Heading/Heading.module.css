@@ -1,0 +1,15 @@
+.default {
+  @apply font-adigiana tracking-[0.02em];
+}
+
+.h1 {
+  @apply default text-5xl leading-[72px] text-sky-500 drop-shadow-h1 md:text-[62px] md:leading-[93px] xl:text-[74px] xl:leading-[111px];
+}
+
+.h2 {
+  @apply default mb-5 text-center text-[40px] leading-[40px]  text-sky-500 drop-shadow-h2 md:mb-[60px] md:text-[52px] md:leading-[78px] xl:mb-20;
+}
+
+.h3 {
+  @apply default text-[28px] leading-[28px] text-neutral-50 drop-shadow-h3 xl:text-[40px] xl:leading-[40px];
+}

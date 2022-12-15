@@ -31,6 +31,7 @@ git@github.com:josserden/neyronchik-project.git
             |-- name_component.tsx -> main component
             |-- name_component.props -> type or interface
             |-- name_component.module.css -> styles
+  |-- fonts -> custom local fonts
   |-- hooks -> custom users hooks
   |-- layout -> components that are used as a main template
   |-- pages -> pages and routing
@@ -45,3 +46,11 @@ git@github.com:josserden/neyronchik-project.git
 ```
 
 ## Components API:
+
+- ### CloseButton
+
+| Prop         | Default | Description                                  |
+| ------------ | :-----: | -------------------------------------------- |
+| `appearance` | `dark`  | choose the correct option: `dark` or `white` |
+
+---

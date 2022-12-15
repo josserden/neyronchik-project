@@ -1,3 +1,6 @@
+/** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   darkMode: 'media',
   mode: 'jit',
@@ -17,6 +20,21 @@ module.exports = {
         padding: {
           DEFAULT: '1rem',
         },
+      },
+
+      fontFamily: {
+        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        adigiana: ['Adigiana'],
+      },
+
+      letterSpacing: {
+        thick: '-0.019em',
+      },
+
+      dropShadow: {
+        h1: ['4px 1px 0px #171717'],
+        h2: ['2px 1px 0px #171717'],
+        h3: ['2px 2px 0px #000000'],
       },
     },
   },

@@ -2,19 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
+@font-face {
+  font-family: 'Adigiana';
+  src: url('../fonts/Adigiana_Extreme.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  @apply font-sans font-normal not-italic;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+.headingCursive {
+  font-family: 'Adigiana';
+  text-shadow: 2px 1px 0px #000000;
 }

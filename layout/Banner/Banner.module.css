@@ -1,0 +1,11 @@
+.banner {
+  @apply bg-sky-500 py-3;
+}
+
+.bannerWrapper {
+  @apply container grid grid-cols-[1fr_20px] gap-2.5  text-neutral-50;
+}
+
+.bannerText {
+  @apply text-center text-base font-normal tracking-thick;
+}
