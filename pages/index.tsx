@@ -1,5 +1,5 @@
-import { Heading } from '@/components'
-import Head from 'next/head'
+import { Heading } from '@/components';
+import Head from 'next/head';
 
 const Home = () => {
   return (
@@ -13,7 +13,7 @@ const Home = () => {
       <Heading tag="h2">About Us</Heading>
       <Heading tag="h3">Про нас</Heading>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
