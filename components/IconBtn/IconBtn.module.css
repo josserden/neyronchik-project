@@ -1,0 +1,24 @@
+.closeBtn,
+.burgerBtn {
+  @apply transition-colors;
+}
+
+.burgerBtn {
+  @apply text-black hover:text-sky-700 focus:text-sky-700;
+}
+
+.closeBtnDark {
+  @apply text-neutral-900 hover:text-sky-700 focus:text-sky-700;
+}
+
+.closeBtnWhite {
+  @apply text-neutral-50 hover:text-neutral-300 focus:text-neutral-300;
+}
+
+.closeBtnIcon {
+  @apply h-5 w-5 fill-current;
+}
+
+.burgerBtnIcon {
+  @apply h-6 w-6 fill-current;
+}

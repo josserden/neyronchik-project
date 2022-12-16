@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   darkMode: 'media',
@@ -39,5 +39,8 @@ module.exports = {
     },
   },
 
-  plugins: [require('@tailwindcss/typography')],
-}
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('tailwind-capitalize-first-letter'),
+  ],
+};

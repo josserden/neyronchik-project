@@ -4129,6 +4129,11 @@
     "@pkgr/utils" "^2.3.1"
     "tslib" "^2.4.0"
 
+"tailwind-capitalize-first-letter@1.0.4":
+  "integrity" "sha512-ZB8hBi68JI4aQ1cDUxuFWfMYTxgBvlzIdPPHSkFkMUlo7p2QlbMy0hVv/vAREAFmkUh9QfjuKQnOSbe4Gnqljg=="
+  "resolved" "https://registry.npmjs.org/tailwind-capitalize-first-letter/-/tailwind-capitalize-first-letter-1.0.4.tgz"
+  "version" "1.0.4"
+
 "tailwindcss@>=3.0.0 || insiders", "tailwindcss@3.2.4":
   "integrity" "sha512-AhwtHCKMtR71JgeYDaswmZXhPcW9iuI9Sp2LvZPo9upDZ7231ZJ7eA9RaURbhpXGVlrjX4cFNlB4ieTetEb7hQ=="
   "resolved" "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.2.4.tgz"

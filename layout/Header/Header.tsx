@@ -1,13 +1,17 @@
-import classNames from 'classnames'
-import { FC } from 'react'
-import { HeaderProps } from './Header.props'
+import { FC } from 'react';
+import { HeaderProps } from './Header.props';
+import Logo from '../../public/images/logo.svg';
+import { IconBtn, LangToggle, Navbar } from '@/components';
 
 export const Header: FC<HeaderProps> = ({ className, ...props }) => {
   return (
-    <header className={classNames('border py-5', className)} {...props}>
+    <header className="bg-cyan-100 py-1" {...props}>
       <div className="container flex items-center justify-between">
-        <p className="text-4xl font-black">Neuronchik.</p>
+        <IconBtn variant="burger" className="xl:hidden" />
+        <Logo className=" w-[164px]" />
+        <Navbar />
+        <LangToggle />
       </div>
     </header>
-  )
-}
+  );
+};

@@ -13,7 +13,8 @@ git@github.com:josserden/neyronchik-project.git
 ```
 
 2. Recommended for use `yarn` - `yarn` or `yarn install`
-3. Create file `.env.local` in the project root using `.env.local.example` as a template
+3. Create file `.env.local` in the project root using `.env.local.example` as a
+   template
 4. `yarn dev`
 5. Open `http://localhost:3000`.
 
@@ -47,10 +48,18 @@ git@github.com:josserden/neyronchik-project.git
 
 ## Components API:
 
-- ### CloseButton
+- ### IconBtn
 
-| Prop         | Default | Description                                  |
-| ------------ | :-----: | -------------------------------------------- |
-| `appearance` | `dark`  | choose the correct option: `dark` or `white` |
+| Prop         | Default | Description                                     |
+| ------------ | :-----: | ----------------------------------------------- |
+| `appearance` | `dark`  | choose the correct option: `dark` or `white`    |
+| `variant`    |   `-`   | choose the correct variant: `close` or `burger` |
 
 ---
+
+- ### Heading
+
+| Prop       | Default | Description                                           |
+| ---------- | :-----: | ----------------------------------------------------- |
+| `tag`      |   `-`   | choose the heading types you'd need: `h1`, `h2`, `h3` |
+| `children` |   `-`   | any content                                           |
