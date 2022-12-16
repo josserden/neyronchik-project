@@ -1,9 +1,7 @@
-import { FC, Fragment, useState } from 'react';
-import { useRouter } from 'next/router';
 import { Listbox, Transition } from '@headlessui/react';
-import classNames from 'classnames';
+import { useRouter } from 'next/router';
+import { FC, Fragment, useState } from 'react';
 import { BsChevronDown } from 'react-icons/bs';
-import s from './LangToggle.module.css';
 
 const locales = [
   { name: 'ua', id: 'uk' },
@@ -14,7 +12,7 @@ export const LangToggle: FC = () => {
   const router = useRouter();
   const [selected] = useState<string | undefined>(router.locale);
 
-  const handleLocaleChange: (value: string) => void = ({ id }): void => {
+  const handleLocaleChange: (value: string) => void = ({ id }: any): void => {
     router.push(router.route, router.asPath, {
       locale: id,
     });
