@@ -1,7 +1,6 @@
 import { FC } from 'react';
 import classNames from 'classnames';
 import { NavbarProps } from './Navbar.props';
-import s from './Navbar.module.css';
 
 const navLink = [
   { id: 'about-us', title: 'про нас' },
