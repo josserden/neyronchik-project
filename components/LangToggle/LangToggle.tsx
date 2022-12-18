@@ -1,10 +1,9 @@
 import { FC, Fragment, useState } from 'react';
 import { useRouter } from 'next/router';
 import { Listbox, Transition } from '@headlessui/react';
-import { BsChevronDown } from 'react-icons/bs';
-import { LangToggleProps } from './LangToggle.props';
-import s from './LangToggle.module.css';
 import classNames from 'classnames';
+import { BsChevronDown } from 'react-icons/bs';
+import s from './LangToggle.module.css';
 
 const locales = [
   { name: 'ua', id: 'uk' },
