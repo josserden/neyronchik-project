@@ -1,0 +1,11 @@
+.linkList {
+  @apply flex flex-col gap-8 xl:flex-row xl:gap-9;
+}
+
+.linkItem {
+  @apply mx-auto xl:mx-0;
+}
+
+.navLink {
+  @apply inline border-b-sky-700 py-1 text-base font-medium text-neutral-900 transition-all hover:border-b-2 hover:text-sky-700 focus:border-b-2 focus:text-sky-700 xl:text-sm;
+}

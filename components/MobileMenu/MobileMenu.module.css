@@ -1,0 +1,31 @@
+.burger {
+  @apply xl:hidden;
+}
+
+.dialog {
+  @apply relative z-10;
+}
+
+.dialogOverlay {
+  @apply inset-0 bg-black bg-opacity-25 before:fixed;
+}
+
+.dialogContent {
+  @apply fixed inset-0 overflow-y-auto;
+}
+
+.closeButton {
+  @apply absolute top-4 right-4 z-10;
+}
+
+.dialogBody {
+  @apply h-full w-full bg-amber-50 pl-3 pt-2;
+}
+
+.mobileLogo {
+  @apply mb-6 w-[103px];
+}
+
+.mobileMenu {
+  @apply grid grid-cols-1 gap-8;
+}

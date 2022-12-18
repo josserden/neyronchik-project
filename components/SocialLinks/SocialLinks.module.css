@@ -1,0 +1,15 @@
+.linkWrapper {
+  @apply flex items-center gap-[38px];
+}
+
+.tel {
+  @apply hidden text-sm font-bold leading-[21px] tracking-thick text-neutral-900 transition-colors hover:text-sky-700 focus:text-sky-700 xl:inline;
+}
+
+.socialLinks {
+  @apply mx-auto flex gap-3 xl:mx-0;
+}
+
+.socialLink {
+  @apply inline-block w-6 drop-shadow-md  transition-all hover:scale-90 hover:fill-sky-700 hover:stroke-sky-700;
+}
