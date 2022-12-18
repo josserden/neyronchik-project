@@ -15,9 +15,8 @@ export const LangToggle: FC = () => {
   const router = useRouter();
   const [selected] = useState<string | undefined>(router.locale);
 
-  const handleLocaleChange: (value: LangToggleProps) => void = ({
-    id,
-  }: LangToggleProps): void => {
+  const handleLocaleChange: (value: string) => void = ({ id }: any): void => {
+    // FIXME: value type  and any type in handleLocaleChange function
     router.push(router.route, router.asPath, {
       locale: id,
     });
