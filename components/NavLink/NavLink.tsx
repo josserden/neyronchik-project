@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { Link } from 'react-scroll';
 import { NavLinkProps } from './NavLink.props';
 import s from './NavLink.module.css';
 
@@ -17,9 +18,17 @@ export const NavLink: FC = () => {
       <ul className={s.linkList}>
         {navLink.map(({ id, title }: NavLinkProps) => (
           <li key={id} className={s.linkItem}>
-            <a href="#" className={s.navLink}>
+            <Link
+              to={id}
+              className={s.navLink}
+              href=""
+              activeClass={s.active}
+              smooth={true}
+              spy={true}
+              // onClick={onCloseMenu}
+            >
               {title}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
