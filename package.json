@@ -26,8 +26,10 @@
     ]
   },
   "dependencies": {
+    "@google-cloud/secret-manager": "4.1.4",
     "@headlessui/react": "1.7.5",
     "@next/font": "13.0.6",
+    "axios": "1.2.1",
     "classnames": "2.3.2",
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-react": "7.31.11",
@@ -39,6 +41,7 @@
     "react-dom": "18.2.0",
     "react-i18next": "12.1.1",
     "react-icons": "4.7.1",
+    "react-lines-ellipsis": "0.15.3",
     "react-responsive": "9.0.2",
     "react-scroll": "1.8.9",
     "tailwind-capitalize-first-letter": "1.0.4"
@@ -51,9 +54,11 @@
     "@types/node": "18.11.13",
     "@types/react": "18.0.26",
     "@types/react-dom": "18.0.9",
+    "@types/react-lines-ellipsis": "0.15.1",
     "@types/react-scroll": "1.8.5",
     "@typescript-eslint/eslint-plugin": "5.46.0",
     "@typescript-eslint/parser": "5.46.0",
+    "add": "2.0.6",
     "autoprefixer": "10.4.13",
     "eslint": "8.29.0",
     "eslint-config-alloy": "4.7.0",
@@ -65,6 +70,7 @@
     "prettier": "2.8.1",
     "prettier-plugin-tailwindcss": "0.2.1",
     "tailwindcss": "3.2.4",
-    "typescript": "4.9.4"
+    "typescript": "4.9.4",
+    "yarn": "1.22.19"
   }
 }
