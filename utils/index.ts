@@ -1,1 +1,2 @@
-export * from './utils'
+export * from './rgbDataURL';
+export * from './utils';

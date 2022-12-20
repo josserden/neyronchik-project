@@ -63,3 +63,12 @@ git@github.com:josserden/neyronchik-project.git
 | ---------- | :-----: | ----------------------------------------------------- |
 | `tag`      |   `-`   | choose the heading types you'd need: `h1`, `h2`, `h3` |
 | `children` |   `-`   | any content                                           |
+
+---
+
+- ### Button
+
+| Prop         | Default | Description                                                |
+| ------------ | :-----: | ---------------------------------------------------------- |
+| `children`   |   `-`   | any content                                                |
+| `appearance` |   `-`   | choose the appearance you'd need: `primary`, `ghost`, `h3` |

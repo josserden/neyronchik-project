@@ -1,3 +1,4 @@
+export * from './Button/Button';
 export * from './Container/Container';
 export * from './Heading/Heading';
 export * from './IconBtn/IconBtn';

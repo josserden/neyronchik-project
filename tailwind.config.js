@@ -15,6 +15,13 @@ module.exports = {
 
   theme: {
     extend: {
+      boxShadow: {
+        blueBtn:
+          '0px 20px 25px -5px rgba(0, 69, 108, 0.1), 0px 8px 10px -6px rgba(0, 69, 108, 0.1)',
+        redBtn:
+          '0px 20px 25px -5px rgba(108, 0, 0, 0.1), 0px 8px 10px -6px rgba(92, 0, 0, 0.1), inset -4px -4px 12px rgba(255, 255, 255, 0.25), inset 4px 4px 12px rgba(255, 255, 255, 0.25)',
+      },
+
       container: {
         center: true,
         padding: {

@@ -1,0 +1,19 @@
+.button {
+  @apply rounded-[30px] px-11 py-4 text-sm font-bold tracking-thick transition-colors xl:px-14 xl:text-base;
+}
+
+.primary {
+  @apply button text-neutral-50;
+}
+
+.ghost {
+  @apply button border-2 border-sky-500 bg-transparent text-sky-500 hover:border-sky-700 hover:text-sky-700 focus:border-sky-700 focus:text-sky-700;
+}
+
+.red {
+  @apply bg-rose-600 hover:bg-rose-800 focus:bg-rose-800;
+}
+
+.blue {
+  @apply bg-sky-600 shadow-blueBtn hover:bg-sky-700 focus:bg-sky-700;
+}
