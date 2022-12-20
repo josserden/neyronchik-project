@@ -47,8 +47,5 @@ module.exports = {
     },
   },
 
-  plugins: [
-    require('@tailwindcss/typography'),
-    require('tailwind-capitalize-first-letter'),
-  ],
+  plugins: [require('@tailwindcss/typography')],
 };
