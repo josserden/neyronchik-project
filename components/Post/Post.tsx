@@ -14,6 +14,6 @@ export const Post: FC<PostProps> = ({ caption, media_url, permalink, media }) =>
             </video>}
             {caption && <LinesEllipsis maxLine='3'ellipsis='...' trimRight className={s.text} text={caption} />}
         </div>
-        <a href={permalink} target="_blank" rel='noopener noreferrer nofollow' className={s.button}>Дізнатися більше <BsArrowRight className={s.buttonArrow} size="1.2rem"/></a>
+        <a href={permalink} target="_blank" rel='noopener noreferrer nofollow' className={s.button}>Дізнатися більше <BsArrowRight className={s.buttonArrow} size="1.5rem"/></a>
     </li>)
 }

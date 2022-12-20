@@ -15,11 +15,13 @@ import {fetchInstagramPosts} from '@/utils'
 
 const Home = () => {
   const [posts, setPosts] = useState([]);
+
    useEffect(() => {
-    (async()=>{
+    (async() => {
     const data = await fetchInstagramPosts()
-  setPosts(data.data.data)})()
-  }, [])
+    setPosts(data?.data.data)})()
+   }, [])
+  
   return (
     <>
       <Head>

@@ -10,7 +10,7 @@ export const News: FC<PostsProps> = ({ posts, title }) => {
        {title}
       </Heading>
       <ul className={s.list}>
-        {posts.map((post) => (
+        {posts?.map((post) => (
           <Post
             key={post.id}
             caption={post.caption }
