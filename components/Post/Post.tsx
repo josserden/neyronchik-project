@@ -6,9 +6,12 @@ import { FC } from 'react';
 import { PostProps } from './Post.props';
 
 export const Post: FC<PostProps> = ({ caption, media_url, permalink, media }) => {
+
+    const imgAlt = caption?.split(".")[0];
+
     return (<li className={s.item}>
         <div className={s.imgWrapper}>
-            {media !== "VIDEO" ? <Image src={media_url} alt="фото з instagram" width={132} height={132} className={s.img} /> : <video controls src={media_url} width={132} height={132} className={s.img}>Sorry, your browser doesn&apos;t support embedded videos,
+            {media !== "VIDEO" ? <Image src={media_url} alt={imgAlt??''} width={132} height={132} className={s.img} /> : <video controls src={media_url} width={132} height={132} className={s.img}>Sorry, your browser doesn&apos;t support embedded videos,
                 but don&apos;t worry, you can <a href={media_url}>download it</a>
   and watch it with your favorite video player!  
             </video>}

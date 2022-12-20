@@ -2,9 +2,9 @@
     padding-top: 40px;
     padding-bottom: 40px;
     background-image: url('/images/news-mob.png');
-    background-position: center;
+    background-position: top left 50%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 627px auto;
 }
 
 @media (min-device-pixel-ratio: 2),
