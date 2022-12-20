@@ -1,12 +1,12 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
 const { SecretManagerServiceClient } = require('@google-cloud/secret-manager');
 
 export const getInstagramToken = async () => {
   // parse your base 64 env variable to a JSON object
   const credentials = JSON.parse(
-    Buffer.from(
-      process.env.GOOGLE_APPLICATION_CREDENTIALS,
+    Buffer.from(process.env.GOOGLE_APPLICATION_CREDENTIALS as string).toString(
       'base64',
-    ).toString(),
+    ),
   );
 
   // TO DO -> CHANGE
