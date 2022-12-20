@@ -1,35 +1,84 @@
 .heading {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  margin-bottom: 148px;
+  @apply mb-[148px] md:mb-[100px];
+}
+
+.container {
+  @apply py-0 px-0 text-center text-sm font-bold leading-normal tracking-thick md:text-base xl:font-medium;
 }
 
 .contactsWrapper {
-  @apply bg-sky-500;
-  position: relative;
+  @apply relative bg-sky-500 xl:grid xl:grid-cols-2;
 }
 
 .contactsInfoWrapper {
-  background-image: url('/images/contacts_bg.svg');
-  background-size: contain;
-  padding: 40px 12px;
+  @apply bg-[url('/images/contacts_bg_sm.svg')] bg-contain px-3 py-10 md:bg-[url('/images/contacts_bg.svg')] md:bg-cover md:px-[60px] md:py-[40px]
+  xl:px-[52px] xl:py-[60px];
 }
+
 .contactsWrapper::before {
   content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
   transform: translateX(-50%) translateY(calc(-100% + 6px));
-  width: 100%;
-  height: 114px;
-  background-image: url('/images/contacts_boy.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  @apply absolute top-0 left-1/2 z-10 h-[114px] w-full bg-[url('/images/contacts_boy.svg')] bg-contain bg-center bg-no-repeat
+  md:h-[134px] md:bg-[center_right_12px] xl:bg-[center_right_100px];
 }
+
 .contactsInfo {
-  background-color: rgba(250, 250, 250, 80%);
-  padding: 20px 12px;
-  border-radius: 20px;
+  @apply rounded-[20px] bg-contactInfo-0 px-3 py-5 md:px-[80px] md:py-[28px] xl:px-[28px];
+}
+
+.contactUs {
+  @apply mb-6 px-6 md:mb-[40px];
+}
+
+.mainContactContent {
+  @apply grid gap-10 md:grid-cols-2 md:gap-0.5 md:text-left xl:grid-cols-[261px,auto];
+}
+
+.mainContactContent > div:nth-child(1) {
+  @apply md:pt-2 xl:pt-0;
+}
+
+.mailPhone {
+  @apply mb-3 grid grid-rows-[1fr,1fr] gap-2 md:mb-5 md:gap-4;
+}
+
+.mailPhone > a:hover {
+  @apply text-sky-700 transition-all;
+}
+
+.list {
+  @apply grid grid-cols-[32px,32px] justify-center gap-3 md:justify-start;
+}
+
+.list > li {
+  @apply leading-none;
+}
+
+.socialLink {
+  border: 1px solid #171717;
+  @apply inline-flex h-8  w-full items-center justify-center rounded-[12px] drop-shadow-md transition-all hover:scale-90 hover:fill-sky-700;
+}
+
+.socialLink:hover {
+  @apply border-sky-700;
+}
+.socialLink:hover > svg {
+  @apply fill-sky-700;
+}
+
+.socialTitle {
+  @apply mt-6 mb-3 md:mt-9 md:mb-4;
+}
+
+.addressBlock {
+  @apply relative grid gap-4 md:grid-rows-[max-content,auto] md:gap-8 md:pt-2 md:pl-10 xl:pl-5;
+}
+
+.addressBlock::before {
+  content: '';
+  @apply absolute top-0 left-0 hidden h-full w-0.5 translate-x-[-100%] bg-[#171717] md:block;
+}
+
+.mapStyle {
+  @apply h-[280px] w-full md:h-[424px] xl:h-[100%];
 }

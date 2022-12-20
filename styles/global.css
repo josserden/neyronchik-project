@@ -35,3 +35,7 @@ body {
 
   border-radius: 5px;
 }
+
+address {
+  font-style: normal;
+}

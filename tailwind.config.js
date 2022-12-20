@@ -22,6 +22,10 @@ module.exports = {
         },
       },
 
+      colors: {
+        contactInfo: ['rgba(250, 250, 250, 0.8)'],
+      },
+
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
         adigiana: ['Adigiana'],
