@@ -1,5 +1,5 @@
 import Image from "next/image";
-import EllipsisText from "react-ellipsis-text";
+import LinesEllipsis from "react-lines-ellipsis";
 import s from './Post.module.css';
 import { BsArrowRight } from "react-icons/bs";
 import { FC } from 'react';
@@ -12,7 +12,7 @@ export const Post: FC<PostProps> = ({ caption, media_url, permalink, media }) =>
                 but don&apos;t worry, you can <a href={media_url}>download it</a>
   and watch it with your favorite video player!  
             </video>}
-            {caption && <EllipsisText length={40} className={s.text} text={caption} />}
+            {caption && <LinesEllipsis maxLine='3'ellipsis='...' trimRight className={s.text} text={caption} />}
         </div>
         <a href={permalink} target="_blank" rel='noopener noreferrer nofollow' className={s.button}>Дізнатися більше <BsArrowRight className={s.buttonArrow} size="1.2rem"/></a>
     </li>)
