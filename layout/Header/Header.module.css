@@ -1,0 +1,15 @@
+.header {
+  @apply bg-cyan-100 py-1;
+}
+
+.headerWrapper {
+  @apply flex items-center justify-between;
+}
+
+.headerLogo {
+  @apply w-[164px];
+}
+
+.headerNav {
+  @apply flex items-center gap-6;
+}

@@ -19,6 +19,7 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
     'react/react-in-jsx-scope': 'off',
     'react/jsx-no-useless-fragment': 'off',
+    'react/prop-types': 'off',
     eqeqeq: 'off',
   },
 };

@@ -1,0 +1,7 @@
+.pageWrapper {
+  @apply flex h-full min-h-screen flex-col bg-amber-50;
+}
+
+.main {
+  @apply flex-grow;
+}

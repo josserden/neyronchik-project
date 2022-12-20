@@ -3,7 +3,7 @@
 }
 
 .bannerWrapper {
-  @apply container grid grid-cols-[1fr_20px] gap-2.5  text-neutral-50;
+  @apply grid grid-cols-[1fr_20px] gap-2.5  text-neutral-50;
 }
 
 .bannerText {
