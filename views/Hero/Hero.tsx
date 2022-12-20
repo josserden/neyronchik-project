@@ -5,9 +5,8 @@ import { rgbDataURL } from '@/utils';
 import { useHeroSliderImage } from '@/hooks';
 import { Button, Container, Heading } from '@/components';
 import s from './Hero.module.css';
-import { HeroProps } from './Hero.props';
 
-export const Hero: FC<HeroProps> = () => {
+export const Hero: FC = () => {
   const { data, image } = useHeroSliderImage();
 
   return (
@@ -41,8 +40,7 @@ export const Hero: FC<HeroProps> = () => {
                 autoplayInterval={5000}
                 withoutControls
               >
-                {data.map((image, index: number) => {
-                  console.log(image);
+                {data.map((image, index) => {
                   return (
                     <Image
                       key={index}
