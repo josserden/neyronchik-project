@@ -1,8 +1,7 @@
-import { useState } from 'react';
-import { Tab } from '@headlessui/react';
 import { FC } from 'react';
-import { ChooseBottonProps } from './ChooseButton.props';
+import { Tab } from '@headlessui/react';
 import s from './ChooseButton.module.css';
+import { ChooseBottonProps } from './ChooseButton.props';
 
 import BlueHand from '@/public/images/choose-button/blue-hand.svg';
 import RedHand from '@/public/images/choose-button/red-hand.svg';
@@ -31,46 +30,37 @@ const chooseBtn = [
   { id: '8', icon: <RedHand />, text: '15 років досвіду' },
 ];
 
-function classNames(...classes: string[]) {
+const classNames = (...classes: string[]): string => {
   return classes.filter(Boolean).join(' ');
-}
+};
 
 export const ChooseButton: FC = () => {
   return (
     <>
-      <div className="relative mx-auto sm:px-0">
-        <Tab.Group>
-          <Tab.List className={`${s.ring} mx-auto h-[249px] w-[249px]`}>
-            {chooseBtn.map(({ id, icon }: ChooseBottonProps) => (
-              <Tab
-                key={id}
-                className={({ selected }) =>
-                  classNames(
-                    `focus:outline-none ${s.icon}`,
+      <Tab.Group as="div" className="relative mx-auto sm:px-0">
+        <Tab.Panels className="z-1 absolute top-[4px] left-1/2 h-[240px] w-[240px] -translate-x-1/2 rounded-[50%] border border-white bg-[#fffbeb] p-3 px-[52px] py-[89px] focus:outline-none">
+          {chooseBtn.map(({ id, text }: ChooseBottonProps) => (
+            <Tab.Panel key={id}>{text}</Tab.Panel>
+          ))}
+        </Tab.Panels>
 
-                    selected ? 'scale-105' : 'text-blue-100',
-                  )
-                }
-              >
-                {icon}
-              </Tab>
-            ))}
-          </Tab.List>
-          <Tab.Panels className="mt-2">
-            {chooseBtn.map(({ id, text }: ChooseBottonProps) => (
-              <Tab.Panel
-                key={id}
-                className={classNames(
-                  'absolute top-[4px] left-[28px] h-[240px] w-[240px] rounded-[50%] border border-white bg-[#fffbeb] p-3 py-[89px] px-[52px]',
-                  'focus:outline-none',
-                )}
-              >
-                {text}
-              </Tab.Panel>
-            ))}
-          </Tab.Panels>
-        </Tab.Group>
-      </div>
+        <Tab.List className={`${s.ring} z-30 mx-auto h-[249px] w-[249px]`}>
+          {chooseBtn.map(({ id, icon }: ChooseBottonProps) => (
+            <Tab
+              key={id}
+              className={({ selected }) =>
+                classNames(
+                  `z-20 focus:outline-none ${s.icon}`,
+
+                  selected ? 'scale-105' : 'text-blue-100',
+                )
+              }
+            >
+              {icon}
+            </Tab>
+          ))}
+        </Tab.List>
+      </Tab.Group>
     </>
   );
 };

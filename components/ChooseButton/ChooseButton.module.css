@@ -1,37 +1,44 @@
-.icon{
-@apply absolute w-[63px] h-[63px];
+.icon {
+  @apply absolute h-[63px] w-[63px];
 }
-.icon:nth-child(1){
-    top: calc(50% - 173px);
-    left: calc(50% - 30px);
+
+.icon:nth-child(1) {
+  top: calc(50% - 173px);
+  left: calc(50% - 30px);
 }
+
 .icon:nth-child(2) {
-    top: calc(50% - 135px);
-    right: calc(50% - 132px);
+  top: calc(50% - 135px);
+  right: calc(50% - 132px);
 }
+
 .icon:nth-child(3) {
-    top: calc(50% - 48px);
-    right: calc(50% - 170px);
+  top: calc(50% - 48px);
+  right: calc(50% - 170px);
 }
+
 .icon:nth-child(4) {
-    @apply top-[75%] right-[8%];
+  @apply top-[75%] right-[8%];
 }
+
 .icon:nth-child(5) {
-    bottom: calc(50% - 173px);
-        left: calc(50% - 30px);
-
+  bottom: calc(50% - 173px);
+  left: calc(50% - 30px);
 }
+
 .icon:nth-child(7) {
-    top: calc(50% - 40px);
-        left: calc(50% - 166px);
+  top: calc(50% - 40px);
+  left: calc(50% - 166px);
 }
 
-.ring{
-    background: rgba(253, 253, 253, 0.5);
-        border: 1px solid #FFFFFF;
-        box-shadow: 0px 16px 56px rgb(0, 0, 0, 0), inset -5px -4px 13px #DAE9EF, inset 5px 4px 13px #DAE9EF;
-        backdrop-filter: blur(4px);
-    
-        border-radius: 50%;
-    /* @apply bg-[url('/images/choose-button/ellipse.svg')] bg-center; */
+.ring {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 16px 56px rgb(0, 0, 0, 0), inset -5px -4px 13px #dae9ef,
+    inset 5px 4px 13px #dae9ef;
+  /* backdrop-filter: blur(4px); */
+  z-index: 10;
+
+  border-radius: 50%;
+  /* @apply bg-[url('/images/choose-button/ellipse.svg')] bg-center; */
 }
