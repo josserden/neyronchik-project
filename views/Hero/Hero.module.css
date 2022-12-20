@@ -1,0 +1,27 @@
+.section {
+  @apply relative z-20 h-[576px] overflow-hidden pt-8 md:h-[584px] md:pt-[77px] xl:h-[668px] xl:pt-[100px];
+}
+
+.sectionWrapper {
+  @apply mx-auto flex h-full max-w-xs flex-col md:mx-0 md:max-w-md xl:max-w-xl xl:pl-[86px];
+}
+
+.heading {
+  @apply mb-1 md:mb-3 xl:mb-4;
+}
+
+.subHeading {
+  @apply mb-3 text-base font-bold leading-6 tracking-thick text-rose-600 md:mb-6 md:text-xl xl:mb-5 xl:text-2xl xl:leading-9;
+}
+
+.description {
+  @apply text-sm font-medium leading-[21px] tracking-thick text-neutral-900 md:mb-[60px] md:text-base;
+}
+
+.button {
+  @apply mt-auto self-start md:mt-0;
+}
+
+.imageWrapper {
+  @apply absolute -top-8 -left-1/2 -z-10 h-full w-full translate-x-1/2;
+}
