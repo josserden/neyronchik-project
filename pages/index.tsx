@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { useEffect, useState } from 'react';
 import {
   AboutUs,
   Choice,
@@ -10,8 +11,18 @@ import {
   Practice,
   Price,
 } from '@/views';
+import { fetchInstagramPosts } from '@/utils';
 
 const Home = () => {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    (async () => {
+      const data = await fetchInstagramPosts();
+      setPosts(data?.data.data);
+    })();
+  }, []);
+
   return (
     <>
       <Head>
@@ -26,7 +37,7 @@ const Home = () => {
       <Price />
       <OurTeam />
       <Gallery />
-      <News />
+      <News posts={posts} title="Останні новини" />
       <Contacts />
     </>
   );
