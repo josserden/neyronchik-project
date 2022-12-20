@@ -9,7 +9,7 @@ export const News: FC<PostsProps> = ({ posts, title }) => {
       <Heading tag="h2" className='mb-10 md:mb-[60px] xl:mb-20'>
        {title}
       </Heading>
-      <ul className="place-items-center grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-y-10 md:gap-x-6 xl:grid-cols-3">
+      <ul className={s.list}>
         {posts.map((post) => (
           <Post
             key={post.id}

@@ -18,8 +18,9 @@
     padding-top: 54px;
     padding-bottom: 54px;
     background-image: url('/images/news.png');
-    background-position: bottom left calc(50% - 620px);
-    background-size: 1280px auto;
+    background-position: bottom calc(50% - 110px) left calc(50% - 87px);
+    background-size: 2056px auto;
+
 }
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
@@ -34,5 +35,10 @@
 .section { 
     padding-top: 72px;
     padding-bottom: 200px;
+    background-position: bottom calc(50% - 160px) left calc(50% - 87px);
 }
+}
+
+.list {
+    @apply place-items-center grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-y-10 md:gap-x-6 xl:grid-cols-3
 }
