@@ -6,3 +6,4 @@ export * from './MobileMenu/MobileMenu';
 export * from './Navbar/Navbar';
 export * from './NavLink/NavLink';
 export * from './SocialLinks/SocialLinks';
+export * from './ChooseButton/ChooseButton';
