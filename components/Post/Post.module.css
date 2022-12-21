@@ -1,0 +1,22 @@
+.item {
+  @apply w-full max-w-[296px] rounded-[30px] border border-white bg-[#FDFDFD]/30 p-3 shadow-postCard backdrop-blur-sm md:max-w-[360px] md:p-5 xl:max-w-[356px];
+}
+
+.imgWrapper {
+  @apply mb-3 flex items-center gap-2 md:mb-5;
+}
+.img {
+  @apply h-[132px] rounded-[20px] object-cover;
+}
+
+.text {
+  @apply max-w-[176px] text-[14px] font-bold leading-[1.5] -tracking-[.019em] text-black md:text-[16px];
+}
+
+.button {
+  @apply block rounded-[30px] bg-rose-600 py-3 text-center text-[14px] font-bold  leading-[1.5] -tracking-[.019em] text-neutral-50 shadow-postButton hover:shadow-postButtonHover focus:shadow-postButtonHover md:text-[16px] xl:text-[18px] xl:font-semibold;
+}
+
+.buttonArrow {
+  @apply ml-[14px] inline-block w-[21px] md:w-7;
+}

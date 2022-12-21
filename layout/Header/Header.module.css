@@ -1,5 +1,5 @@
 .header {
-  @apply bg-cyan-100 py-1;
+  @apply relative z-20 bg-cyan-100 py-1;
 }
 
 .headerWrapper {

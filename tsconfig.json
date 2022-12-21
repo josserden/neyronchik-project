@@ -26,6 +26,7 @@
     "**/*.ts",
     "**/*.tsx",
     "components/Map/Map.jsx",
-    "views/Contacts/Contacts.tsx"
+    "views/Contacts/Contacts.tsx",
+    "pages/api/googleCloud.js"
   ]
 }
