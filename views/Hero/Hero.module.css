@@ -1,5 +1,5 @@
 .section {
-  @apply relative z-20 h-[576px] overflow-hidden pt-8 md:h-[584px] md:pt-[77px] xl:h-[668px] xl:pt-[100px];
+  @apply relative z-10 h-[576px] overflow-hidden pt-8 md:h-[584px] md:pt-[77px] xl:h-[668px] xl:pt-[100px];
 }
 
 .sectionWrapper {
