@@ -33,6 +33,9 @@ module.exports = {
           DEFAULT: '0.75rem',
         },
       },
+      colors: {
+        glass: 'rgba(253, 253, 253, 0.8)',
+      },
       dropShadow: {
         h1: ['4px 1px 0px #171717'],
         h2: ['2px 1px 0px #171717'],

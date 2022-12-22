@@ -2,6 +2,7 @@ import { AppProps } from 'next/app';
 import { appWithTranslation } from 'next-i18next';
 import { Layout } from '@/layout';
 import '@/styles/global.css';
+import '@/styles/scrollbar.css';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (

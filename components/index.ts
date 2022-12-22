@@ -7,4 +7,5 @@ export * from './MobileMenu/MobileMenu';
 export * from './Navbar/Navbar';
 export * from './NavLink/NavLink';
 export * from './Post/Post';
+export * from './Scrollbar/Scrollbar';
 export * from './SocialLinks/SocialLinks';
