@@ -43,6 +43,7 @@ const contacts = {
   address: {
     title: 'Адреса',
     value: 'м. Ірпінь, вул. Садова 94, 2й поверх',
+    href: 'https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%A1%D0%B0%D0%B4%D0%BE%D0%B2%D0%B0%D1%8F,+94,+%D0%98%D1%80%D0%BF%D0%B5%D0%BD%D1%8C,+%D0%9A%D0%B8%D0%B5%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+08200/@50.5208434,30.2196167,19z/data=!4m5!3m4!1s0x472b317b8377e027:0x748e502a5356f1da!8m2!3d50.521326!4d30.219172',
   },
   time: {
     title: 'Часи роботи:',
@@ -117,7 +118,7 @@ export const Contacts: FC = () => {
               <div className={s.addressBlock}>
                 <address>
                   <a
-                    href={process.env.NEXT_PUBLIC_MAP_URL}
+                    href={contacts.address.href}
                     target="_blank"
                     rel="noreferrer noopener"
                   >
